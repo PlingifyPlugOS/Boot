@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Booting....</title>
-  <META HTTP-EQUIV="REFRESH" CONTENT="3;https://plingifyplugos.github.io/LogoAfterBoot/">
+  <META HTTP-EQUIV="REFRESH" CONTENT="7;https://plingifyplugos.github.io/LogoAfterBoot/">
 </head>
 <body>
   <font style="color: darkgreen;">
@@ -21,16 +21,35 @@
   <p>Loading: (Other:Scripting:Model,010101)</p>
   <p>Booting Line Code...</p>
   <p>Loading: Running!</p>
-  <p>Error: (Code Failed To Boot Trying Again)</p>
+  <div id='show1'>
+  <p>Error: (Code Failed To Boot Trying Again)</p></div>
+  <div id='show2'>
   <p>Success: (Code:Loaded)</p>
-<p>Plingifyplug© 2023</p>
-</div>
+<p>Plingifyplug© 2023</p></div>
 </div>
 </body>
 <style>
 
+#show2{
+  animation: cssAnimation 0s 5s forwards;
+  visibility: hidden;
+}
+
+@keyframes cssAnimation {
+  to   { visibility: visible; }
+}
+
+#show1{
+  animation: cssAnimation 0s 3s forwards;
+  visibility: hidden;
+}
+
+@keyframes cssAnimation {
+  to   { visibility: visible; }
+}
+
 #showLater{
-  animation: cssAnimation 0s 1s forwards;
+  animation: cssAnimation 0s 2s forwards;
   visibility: hidden;
 }
 
@@ -39,7 +58,7 @@
 }
 
 #showMe {
-  animation: cssAnimation 0s .5s forwards;
+  animation: cssAnimation 0s 1s forwards;
   visibility: hidden;
 }
 
